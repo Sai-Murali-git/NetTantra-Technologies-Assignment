@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/3b3c3e8036.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 class="form-heading p-5 text-center">LMS || User Registration</h1>
+    <div class="container pt-5">
+      <form id="myForm">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="FullName"
+          />
+          <p id="nameErrMsg" class="error-message"></p>
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Email Address"
+          />
+          <p id="emailErrMsg" class="error-message"></p>
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Mobile Number"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Password"
+          />
+          <p id="emailErrMsg" class="error-message"></p>
+        </div>
+        <button class="btn btn-primary">Register</button>
+      </form>
+      <p class="login-text"><a href="#loginPage" target="_blank">Log in</a></p>
+      <p class="forgot-password">
+        <a href="#" target="_blank">Forgot password?</a>
+      </p>
+    </div>
+
+    <div class="sidebar0">
+      <div class="head-container">
+        <div class="sidebar-item">
+          <p class="icon-name">Laundry Management System</p>
+          <i class="fa fa-bars icon"></i>
+        </div>
+      </div>
+      <div class="profile-container">
+        <p class="circle">
+          <i class="fa fa-user icon"></i>
+        </p>
+      </div>
+    </div>
+    <div class="bg-container">
+      <div class="sidebar">
+        <div>
+          <div class="sidebar-item">
+            <i class="fas fa-home icon"></i>
+            <p class="icon-name">Dashboard</p>
+          </div>
+          <div class="sidebar-item">
+            <i class="fas fa-download icon"></i>
+            <div class="aa">
+              <p class="icon-name">Laundry Request</p>
+              <p class="icon-name">></p>
+            </div>
+          </div>
+          <div class="sidebar-item">
+            <i class="far fa-star icon"></i>
+            <div class="aa">
+              <p class="icon-name">Request Status</p>
+              <p class="icon-name">></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="db_container">
+          <span class="dsh_clr">Dashboard</span> / Overview
+        </h1>
+        <div class="wrap">
+          <div class="box">
+            <div>
+              <p class="text">0 New Request</p>
+            </div>
+            <hr class="line" />
+            <div class="ab">
+              <p>View Details</p>
+              <p>></p>
+            </div>
+          </div>
+          <div class="box box1">
+            <div>
+              <p class="text">0 New Request</p>
+            </div>
+            <hr class="line" />
+            <div class="ab">
+              <p>View Details</p>
+              <p>></p>
+            </div>
+          </div>
+          <div class="box box2">
+            <div>
+              <p class="text">0 New Request</p>
+            </div>
+            <hr class="line" />
+            <div class="ab">
+              <p>View Details</p>
+              <p>></p>
+            </div>
+          </div>
+          <div class="box box3">
+            <div>
+              <p class="text">0 New Request</p>
+            </div>
+            <hr />
+            <div class="ab">
+              <p>View Details</p>
+              <p>></p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 class="laundry-heading">Laundry Price(Per Unit)</h1>
+          <table>
+            <tr>
+              <td class="table-info">Top Wear Laundry Price</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td class="table-info">Bottom Wear Laundry Price</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td class="table-info">Woolen Cloth Laundry Price</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td class="table-info">Other Price</td>
+              <td>
+                Other Price depend upon cloth variety(other than above three
+                category)
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer-section">
+          <p>Copywrite Laundry Management System 2019</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
